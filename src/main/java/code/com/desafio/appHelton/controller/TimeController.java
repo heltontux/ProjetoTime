@@ -42,9 +42,9 @@ public class TimeController {
 		return obterLista(model);
 	}
 	
-	@GetMapping(value = "/time/consutar")
+	@GetMapping(value = "/time/consultar")
 	public String consultar() {
-		return "";
+		return "redirect:/time";
 	}
 	
 	@GetMapping(value = "/time/lista")
