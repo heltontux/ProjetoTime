@@ -52,8 +52,12 @@ public class TimeController {
 	@GetMapping(value = "/time/lista")
 	public String obterLista(Model model) {
 		model.addAttribute("times", timeService.obterLista());
-		
 		return "time/lista";
+	}
+	
+	@GetMapping(value = "/voltar")
+	public String voltar() {
+		return "redirect:/time/lista";
 	}
 	
 }

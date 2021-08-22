@@ -21,7 +21,7 @@
 	
 	<c:if test="${not empty meuTime}">
 		<c:set var="titulo" value="Consulta de time"/>
-		<c:set var="rota" value="/time/lista"/>
+		<c:set var="rota" value="/voltar"/>
 		<c:set var="metodo" value="get"/>
 		<c:set var="botao" value="Voltar"/>
 	</c:if>
