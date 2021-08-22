@@ -42,9 +42,11 @@ public class TimeController {
 		return obterLista(model);
 	}
 	
-	@GetMapping(value = "/time/consultar")
-	public String consultar() {
-		return "redirect:/time";
+	@GetMapping(value = "/time/{id}/consultar")
+	public String consultar(Model model, @PathVariable Integer id) {
+		Time time = timeService.obterPorId(id);
+		model.addAttribute("meuTime", time);
+		return telaCadastro();
 	}
 	
 	@GetMapping(value = "/time/lista")

@@ -45,7 +45,7 @@
         <td>${time.nome}</td>
         <td>${time.anoFundacao}</td>
         <td><a href="/time/${time.id}/excluir">Excluir</a></td>
-        <td><a href="/time/consultar">Detalhar</a></td>
+        <td><a href="/time/${time.id}/consultar">Detalhar</a></td>
       </tr>
        </c:forEach>
     </tbody>

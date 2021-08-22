@@ -20,12 +20,12 @@
 	 <form action="/time/incluir" method="post">
 		  <div class="form-group">
 		    <label>Nome:</label>
-		    <input type="text" class="form-control" placeholders="Entre com o nome do time" name="nome">
+		    <input type="text" class="form-control" value="${meuTime.nome}" placeholders="Entre com o nome do time" name="nome">
 		  </div>
 		  
 		  <div class="form-group">
 		    <label>Ano de Fundação:</label>
-		    <input type="text" class="form-control" placeholders="Entre com o ano de fundação do time" name="anoFundacao">
+		    <input type="text" class="form-control" value="${meuTime.anoFundacao}" placeholders="Entre com o ano de fundação do time" name="anoFundacao">
 		  </div>
 		  
 		  <button type="submit" class="btn btn-default">Cadastrar</button>
