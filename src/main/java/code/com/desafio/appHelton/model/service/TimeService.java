@@ -1,10 +1,9 @@
 package code.com.desafio.appHelton.model.service;
 
-import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.data.domain.Sort;
 import org.springframework.stereotype.Service;
 
 import code.com.desafio.appHelton.model.domain.Time;
@@ -17,7 +16,7 @@ public class TimeService {
 	private TimeRepository timeRepository;
 
 	public List<Time> obterLista(){
-		return (List<Time>) timeRepository.findAll();
+		return (List<Time>) timeRepository.findAll(Sort.by(Sort.Direction.ASC, "nome"));
 		
 	}
 	
