@@ -20,6 +20,11 @@ public class TimeService {
 		
 	}
 	
+	public List<Time> obterLista(String campo){
+		return (List<Time>) timeRepository.findAll(Sort.by(Sort.Direction.ASC, campo));
+		
+	}
+	
 	public void incluir(Time time) {
 		timeRepository.save(time);
 	}

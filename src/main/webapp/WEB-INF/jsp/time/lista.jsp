@@ -35,7 +35,6 @@
     			<option value="nome">Nome</option>
     			<option value="anoFundacao">Ano de fundação</option>
     		</select>
-/*      		<input type="text" class="form-control" placeholder="Search" name="search"> */
       		<div class="input-group-btn">
         	<button class="btn btn-default" type="submit"><i class="glyphicon glyphicon-sort-by-alphabet"></i></button>
       	</div>

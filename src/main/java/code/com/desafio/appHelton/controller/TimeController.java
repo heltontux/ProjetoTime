@@ -62,8 +62,9 @@ public class TimeController {
 	}
 	
 	@PostMapping(value = "/time/ordenar")
-	public String ordenar(@RequestParam String sortBy) {
-		return "redirect:/time/lista";
+	public String ordenar(Model model, @RequestParam String sortBy) {
+		model.addAttribute("times", timeService.obterLista(sortBy));
+		return "time/lista";
 	}
 	
 }
