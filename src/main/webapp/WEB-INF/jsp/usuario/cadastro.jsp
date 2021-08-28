@@ -47,7 +47,7 @@
 		  
 		  <div class="form-group">
 		    <label>Senha:</label>
-		    <input type="text" class="form-control" value="${meuUsuario.nome}" placeholders="Entre com a senha" name="senha">
+		    <input type="text" class="form-control" value="${meuUsuario.senha}" placeholders="Entre com a senha" name="senha">
 		  </div>
 		  
 		  

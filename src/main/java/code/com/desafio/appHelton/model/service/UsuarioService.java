@@ -28,15 +28,16 @@ public class UsuarioService {
 	  public void incluir(Usuario usuario) {
 		usuarioRepository.save(usuario);
 	}
+	  
+	  public Usuario obterPorId(Integer id) {
+			return usuarioRepository.findById(id).orElse(null);
+		}
 	
 	/*
 	public void excluir(Integer id) {
 		timeRepository.deleteById(id);
 	}
-	
-	public Time obterPorId(Integer id) {
-		return timeRepository.findById(id).orElse(null);
-	}
+
 }
 
 	 */

@@ -50,7 +50,6 @@
         <th>Nome</th>
         <th>Email</th>
         <th>Data de Nascimento</th>
-        <th>Senha</th>
       </tr>
     </thead>
     <tbody>
@@ -60,9 +59,8 @@
         <td>${usuario.nome}</td>
         <td>${usuario.email}</td>
         <td>${usuario.dataNascimento}</td>
-        <td>${usuario.senha}</td>
         <td><a href="/usuario/${usuario.id}/excluir">Excluir</a></td>
-        <td><a href="/usuario/${usuario.id}/consultar">Detalhar</a></td>
+        <td><a href="/usuario/${usuario.id}/detalhar">Detalhar</a></td>
       </tr>
        </c:forEach>
     </tbody>

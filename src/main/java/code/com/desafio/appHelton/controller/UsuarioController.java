@@ -37,6 +37,13 @@ import code.com.desafio.appHelton.model.service.UsuarioService;
 			return obterLista(model);
 		}
 		
+		@GetMapping(value = "/usuario/{id}/detalhar")
+		public String detalhar(Model model, @PathVariable Integer id) {
+			Usuario usuario = usuarioService.obterPorId(id);
+			model.addAttribute("meuUsuario", usuario);
+			return telaCadastro();
+		}
+		
 	/*
 		@GetMapping(value = "/usuario/{id}/excluir")
 		public String excluir(Model model, @PathVariable Integer id) {
@@ -44,13 +51,6 @@ import code.com.desafio.appHelton.model.service.UsuarioService;
 			timeService.excluir(id);
 			model.addAttribute("mensagem", "Time "+timeExcluido.getNome()+" excluido com sucesso!!!");
 			return obterLista(model);
-		}
-		
-		@GetMapping(value = "/time/{id}/consultar")
-		public String consultar(Model model, @PathVariable Integer id) {
-			Time time = timeService.obterPorId(id);
-			model.addAttribute("meuTime", time);
-			return telaCadastro();
 		}
 		
 		@GetMapping(value = "/voltar")
