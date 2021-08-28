@@ -44,6 +44,11 @@ import code.com.desafio.appHelton.model.service.UsuarioService;
 			return telaCadastro();
 		}
 		
+		@GetMapping(value = "/usuarioVoltar")
+		public String voltar() {
+			return "redirect:/usuario/lista";
+		}
+		
 	/*
 		@GetMapping(value = "/usuario/{id}/excluir")
 		public String excluir(Model model, @PathVariable Integer id) {
@@ -51,11 +56,6 @@ import code.com.desafio.appHelton.model.service.UsuarioService;
 			timeService.excluir(id);
 			model.addAttribute("mensagem", "Time "+timeExcluido.getNome()+" excluido com sucesso!!!");
 			return obterLista(model);
-		}
-		
-		@GetMapping(value = "/voltar")
-		public String voltar() {
-			return "redirect:/time/lista";
 		}
 		
 		@PostMapping(value = "/time/ordenar")

@@ -21,7 +21,7 @@
 	
 	<c:if test="${not empty meuUsuario}">
 		<c:set var="titulo" value="Consulta de usuário"/>
-		<c:set var="rota" value="/voltar"/>
+		<c:set var="rota" value="/usuarioVoltar"/>
 		<c:set var="metodo" value="get"/>
 		<c:set var="botao" value="Voltar"/>
 	</c:if>
