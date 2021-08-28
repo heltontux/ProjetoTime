@@ -56,12 +56,11 @@ import code.com.desafio.appHelton.model.service.UsuarioService;
 			model.addAttribute("mensagem", "Usuário "+usuarioExcluido.getNome()+" excluido com sucesso!!!");
 			return obterLista(model);
 		}
-		/*
 		
-		@PostMapping(value = "/time/ordenar")
+		@PostMapping(value = "/usuario/ordenar")
 		public String ordenar(Model model, @RequestParam String sortBy) {
-			model.addAttribute("times", timeService.obterLista(sortBy));
-			return "time/lista";
+			model.addAttribute("usuarios", usuarioService.obterLista(sortBy));
+			return "usuario/lista";
 		}
-		*/
+		
 	}

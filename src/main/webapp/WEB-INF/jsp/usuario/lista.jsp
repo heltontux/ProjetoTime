@@ -29,13 +29,13 @@
 
   <h2>Listagem de usuários: ${usuarios.size()}</h2>
   
-    <form action="/usuarios/ordenar" method="post">
+    <form action="/usuario/ordenar" method="post">
     	<div class="input-group">
     		<select name="sortBy">
+    			<option value="id">Id</option>
     			<option value="nome">Nome</option>
     			<option value="email">Email</option>
     			<option value="dataNascimento">Data de Nascimento</option>
-    			<option value="senha">Senha</option>
     		</select>
       		<div class="input-group-btn">
         	<button class="btn btn-default" type="submit"><i class="glyphicon glyphicon-sort-by-alphabet"></i></button>
