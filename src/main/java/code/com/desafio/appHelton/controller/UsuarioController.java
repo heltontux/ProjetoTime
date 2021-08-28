@@ -49,14 +49,14 @@ import code.com.desafio.appHelton.model.service.UsuarioService;
 			return "redirect:/usuario/lista";
 		}
 		
-	/*
 		@GetMapping(value = "/usuario/{id}/excluir")
 		public String excluir(Model model, @PathVariable Integer id) {
-			Time timeExcluido = timeService.obterPorId(id);
-			timeService.excluir(id);
-			model.addAttribute("mensagem", "Time "+timeExcluido.getNome()+" excluido com sucesso!!!");
+			Usuario usuarioExcluido = usuarioService.obterPorId(id);
+			usuarioService.excluir(id);
+			model.addAttribute("mensagem", "Usuário "+usuarioExcluido.getNome()+" excluido com sucesso!!!");
 			return obterLista(model);
 		}
+		/*
 		
 		@PostMapping(value = "/time/ordenar")
 		public String ordenar(Model model, @RequestParam String sortBy) {

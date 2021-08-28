@@ -31,15 +31,12 @@ public class UsuarioService {
 	  
 	  public Usuario obterPorId(Integer id) {
 			return usuarioRepository.findById(id).orElse(null);
-		}
-	
-	/*
-	public void excluir(Integer id) {
-		timeRepository.deleteById(id);
+	}
+	  
+	  public void excluir(Integer id) {
+		usuarioRepository.deleteById(id);
 	}
 
 }
-
-	 */
 	
-}
+
